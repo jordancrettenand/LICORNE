@@ -7,7 +7,7 @@ body {
   font-style: normal;
   background-image: url(/img/background_chalk-board.jpg);
   background-repeat: repeat;
-  background-size: contain;
+  background-size: 170%;
 }
 
 :root {
@@ -53,24 +53,47 @@ video {
 
 // bootstrap ->
 
-.row + .row {
-  margin-top: 16px;
-}
+// .row + .row {
+//   margin-top: 16px;
+// }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
 
-  padding-bottom: 12px;
+//   padding-bottom: 12px;
 
-  background-color: rgba(0, 98, 255, 0.15);
+//   background-color: rgba(0, 98, 255, 0.15);
 
-  border: 1px solid rgba(102, 0, 255, 0.2);
-}
+//   border: 1px solid rgba(102, 0, 255, 0.2);
+// }
 
 // bootstrap ->
 
-header,
-footer {
-  background-color: grey;
-}
+// header,
+// footer {
+//   background-color: grey;
+// }
+
+// --------------------
+
+// ---------------------
+
+// .container {
+//   // position: relative;
+//   width: 100vw; /* 100% de la largeur de la fenêtre */
+//   height: 100vh; /* 100% de la hauteur de la fenêtre */
+//   overflow: hidden; /* Pour cacher le débordement de l'image */
+// }
+
+// .image {
+//   width: 800px;
+//   height: 800px;
+//   // background-image: url("/img/bière-brune.png");
+//   // background-size: cover;
+//   // background-position: center;
+//   // position: absolute;
+//   top: -500px; /* Pour déplacer l'image vers le haut (hors de la vue) */
+//   left: -500px; /* Pour déplacer l'image vers la gauche (hors de la vue) */
+//   transform: rotate(35deg);
+// }

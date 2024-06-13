@@ -1,0 +1,88 @@
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f0f0f0;
+//   margin: 0;
+// }
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 228px;
+  height: 56px;
+  background-color: #c50a0a;
+  border: none;
+  border-radius: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #e0e0e0;
+}
+
+.custom-button .icon {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+// ---------------
+
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #f0f0f0;
+//   margin: 0;
+// }
+
+.language-selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-selector {
+  width: 97px;
+  height: 47px;
+  padding: 5px;
+  border: none;
+  border-radius: 12px;
+  font-size: 22px;
+  background-color: #f0f0f0;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none; /* Remove default dropdown arrow for Safari */
+  -moz-appearance: none; /* Remove default dropdown arrow for Firefox */
+  position: relative; /* Position for custom arrow */
+  padding-right: 20px; /* Space for custom arrow */
+}
+
+// /* Add a custom arrow */
+// .language-selector::after {
+//   content: "▼";
+//   font-size: 14px;
+//   color: #ffffff;
+//   position: absolute;
+//   right: 10px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   pointer-events: none; /* So the arrow doesn't block click events */
+// }
+
+.language-selector option {
+  background-color: #ffffff;
+  color: #000000;
+}

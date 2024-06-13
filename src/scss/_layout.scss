@@ -1,0 +1,94 @@
+// --MAIN---
+
+.info {
+  color: yellow;
+  font-size: 30px;
+}
+
+.infos {
+  margin-top: 200px;
+}
+
+main h3 {
+  color: #fff;
+  font-weight: normal;
+}
+
+main h2 {
+  color: blue;
+  font-size: 50px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.logo {
+  margin-top: 174px;
+}
+
+.texte {
+  color: orange;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+// --icone---
+
+.icone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+}
+
+// --FOOTER---
+
+footer {
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.© {
+  margin-top: 18px;
+}
+
+footer img {
+  max-width: 229px;
+  margin-bottom: 41px;
+}
+
+footer a {
+  margin-bottom: 7px;
+  text-decoration: none;
+  display: flex;
+}
+
+footer h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.juridic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid red;
+  max-width: 1353px;
+  margin: 0 60px 0 60px;
+}
+
+.réseaux {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
