@@ -1,0 +1,28 @@
+// -----------image bouteille de bier--------------
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.rotated-image {
+  position: absolute;
+  transform-origin: center; /* Rotate around the center of the image */
+}
+
+.left {
+  top: -55%; /* Adjust this value to control vertical positioning */
+  left: -30%; /* Adjust this value to control horizontal positioning */
+  transform: rotate(30deg);
+}
+
+.left:nth-of-type(2) {
+  top: 25%; /* Adjust this value to position the second image lower */
+}
+
+.right {
+  top: -55%; /* Adjust this value to control vertical positioning */
+  right: -20%; /* Adjust this value to control horizontal positioning */
+  // transform: rotate(-30deg);
+}

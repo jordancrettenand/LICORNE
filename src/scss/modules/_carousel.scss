@@ -1,0 +1,111 @@
+.carousel {
+  position: relative;
+  // width: 80%;
+  // max-width: 1000px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.triangle-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 225vh solid transparent;
+  z-index: -1;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 50%;
+  margin-left: 100px;
+}
+
+.text-section h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.text-section p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.text-section button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.carousel-slide img {
+  width: 20%;
+  height: auto;
+  margin-right: 220px;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Specific styles for each slide */
+.slide1 .triangle-background {
+  border-right: 50vw solid #e30613;
+}
+
+.slide2 .triangle-background {
+  border-right: 50vw solid #f4af0a;
+}
+
+.slide3 .triangle-background {
+  border-right: 50vw solid #58b999;
+}
