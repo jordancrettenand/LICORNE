@@ -47,6 +47,10 @@ video {
   vertical-align: middle;
 }
 
+img {
+  max-width: 50%;
+}
+
 /* ====================================
 // base rules
 // ==================================== */
@@ -70,30 +74,13 @@ video {
 
 // bootstrap ->
 
-// header,
-// footer {
-//   background-color: grey;
-// }
-
-// --------------------
-
 // ---------------------
 
-// .container {
-//   // position: relative;
-//   width: 100vw; /* 100% de la largeur de la fenêtre */
-//   height: 100vh; /* 100% de la hauteur de la fenêtre */
-//   overflow: hidden; /* Pour cacher le débordement de l'image */
-// }
+.burger {
+  color: #fff;
+  font-size: 20px;
+}
 
-// .image {
-//   width: 800px;
-//   height: 800px;
-//   // background-image: url("/img/bière-brune.png");
-//   // background-size: cover;
-//   // background-position: center;
-//   // position: absolute;
-//   top: -500px; /* Pour déplacer l'image vers le haut (hors de la vue) */
-//   left: -500px; /* Pour déplacer l'image vers la gauche (hors de la vue) */
-//   transform: rotate(35deg);
-// }
+.present {
+  margin-bottom: 135px;
+}

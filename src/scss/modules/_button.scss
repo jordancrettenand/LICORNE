@@ -1,50 +1,39 @@
-// body {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-//   background-color: #f0f0f0;
-//   margin: 0;
-// }
-
 .custom-button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
   width: 228px;
   height: 56px;
-  background-color: #c50a0a;
+  background-color: #000;
   border: none;
   border-radius: 12px;
   font-size: 25px;
   font-weight: bold;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-button:hover {
-  background-color: #e0e0e0;
+  background-color: #fff;
+  color: #000;
 }
 
 .custom-button .icon {
   margin-right: 8px;
   width: 24px;
   height: 24px;
+  filter: brightness(0) saturate(100%) invert(100%);
+
+  transition: filter 0.3s ease;
+}
+
+.custom-button:hover .icon {
+  filter: brightness(0) saturate(100%) invert(0%);
 }
 
 // ---------------
-
-// body {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-//   background-color: #f0f0f0;
-//   margin: 0;
-// }
 
 .language-selector-container {
   display: flex;
@@ -69,18 +58,6 @@
   position: relative; /* Position for custom arrow */
   padding-right: 20px; /* Space for custom arrow */
 }
-
-// /* Add a custom arrow */
-// .language-selector::after {
-//   content: "▼";
-//   font-size: 14px;
-//   color: #ffffff;
-//   position: absolute;
-//   right: 10px;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   pointer-events: none; /* So the arrow doesn't block click events */
-// }
 
 .language-selector option {
   background-color: #ffffff;
