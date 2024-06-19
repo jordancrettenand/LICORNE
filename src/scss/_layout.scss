@@ -1,12 +1,13 @@
 // --MAIN---
 
 .info {
-  color: yellow;
-  font-size: 30px;
+  color: #fff;
+  font-size: 26px;
+  text-align: justify;
 }
 
 .infos {
-  margin-top: 200px;
+  margin-bottom: 300px;
 }
 
 main h2 {
@@ -35,8 +36,7 @@ main h5 {
   color: orange;
   font-size: 30px;
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 // --icone---
@@ -56,6 +56,8 @@ main h5 {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  margin-top: 300px;
+  margin-bottom: 300px;
 }
 
 video {
@@ -139,7 +141,7 @@ hr {
 }
 
 .left {
-  top: -55%; /* Adjust this value to control vertical positioning */
+  top: -35%; /* Adjust this value to control vertical positioning */
   left: -55%; /* Adjust this value to control horizontal positioning */
   transform: rotate(30deg);
 }
@@ -149,12 +151,10 @@ hr {
 }
 
 .right {
-  top: -25%; /* Adjust this value to control vertical positioning */
-  right: -165%; /* Adjust this value to control horizontal positioning */
+  top: -35%; /* Adjust this value to control vertical positioning */
+  right: -55%; /* Adjust this value to control horizontal positioning */
   transform: rotate(-30deg);
 }
-
-// -----------image bouteille--------------
 
 // -----------image clicable bouteille--------------
 
@@ -178,6 +178,9 @@ hr {
 .beer-image-container {
   position: relative;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .beer-image {
@@ -216,7 +219,6 @@ hr {
 }
 
 // --------------
-
 // body {
 //   font-family: Arial, sans-serif;
 //   margin: 0;
@@ -252,17 +254,40 @@ hr {
   position: relative;
 }
 
+.triangle-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 50vh solid transparent;
+  z-index: -1;
+}
+
 .carousel-content {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   padding: 20px;
 }
 
-.carousel-content h2 {
+.text-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-section h2 {
   margin: 0;
   font-size: 2em;
 }
 
-.carousel-content button {
+.text-section p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.text-section button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1em;
@@ -286,6 +311,12 @@ hr {
   cursor: pointer;
   font-size: 1.5em;
   z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-prev {
@@ -294,4 +325,17 @@ hr {
 
 .carousel-next {
   right: 10px;
+}
+
+/* Specific styles for each slide */
+.slide1 .triangle-background {
+  border-right: 50vw solid yellow;
+}
+
+.slide2 .triangle-background {
+  border-right: 50vw solid red;
+}
+
+.slide3 .triangle-background {
+  border-right: 50vw solid blue;
 }

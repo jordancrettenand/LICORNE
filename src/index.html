@@ -55,35 +55,47 @@
       </div>
 
 
-
-
       <div class="carousel">
-        <div class="carousel-slide active">
+        <div class="carousel-slide slide1 active">
+            <div class="triangle-background"></div>
             <div class="carousel-content">
-                <h2>Title 1</h2>
-                <button>Learn More</button>
+                <div class="text-section">
+                    <h2>Menu Item 1</h2>
+                    <p>Description for item 1</p>
+                    <button>Order Now</button>
+                </div>
+                <img src="image1.jpg" alt="Menu Image 1">
             </div>
-            <img src="../img/bière-IPA.png" alt="Image 1">
         </div>
-        <div class="carousel-slide">
+        <div class="carousel-slide slide2">
+            <div class="triangle-background"></div>
             <div class="carousel-content">
-                <h2>Title 2</h2>
-                <button>Learn More</button>
+                <div class="text-section">
+                    <h2>Menu Item 2</h2>
+                    <p>Description for item 2</p>
+                    <button>Order Now</button>
+                </div>
+                <img src="image2.jpg" alt="Menu Image 2">
             </div>
-            <img src="../img/bière-IPA.png" alt="Image 2">
         </div>
-        <div class="carousel-slide">
+        <div class="carousel-slide slide3">
+            <div class="triangle-background"></div>
             <div class="carousel-content">
-                <h2>Title 3</h2>
-                <button>Learn More</button>
+                <div class="text-section">
+                    <h2>Menu Item 3</h2>
+                    <p>Description for item 3</p>
+                    <button>Order Now</button>
+                </div>
+                <img src="image3.jpg" alt="Menu Image 3">
             </div>
-            <img src="../img/bière-IPA.png" alt="Image 3">
         </div>
         <button class="carousel-prev">&#10094;</button>
         <button class="carousel-next">&#10095;</button>
     </div>
-    <script src="js/main.js"></script>
 
+    <script src="scripts.js"></script>
+
+      
 
 
       <br />
@@ -131,34 +143,48 @@
             <div class="frame">
               <div class="beer-image-container">
                   <img src="../img/bière-blonde.png" alt="Beer 1" class="beer-image" data-popup="popup1">
+                   <button class="custom-button">
+              Commander
+              <img src="../img/icone-panier.svg" alt="Panier" class="icon" />
+            </button>
               </div>
               <div class="beer-image-container">
-                  <img src="../img/bière-blonde.png" alt="Beer 2" class="beer-image" data-popup="popup2">
+                  <img src="../img/bière-IPA.png" alt="Beer 2" class="beer-image" data-popup="popup2">
+                   <button class="custom-button">
+              Commander
+              <img src="../img/icone-panier.svg" alt="Panier" class="icon" />
+            </button>
               </div>
               <div class="beer-image-container">
-                  <img src="../img/bière-blonde.png" alt="Beer 3" class="beer-image" data-popup="popup3">
+                  <img src="../img/bière-brune.png" alt="Beer 3" class="beer-image" data-popup="popup3">
+                   <button class="custom-button">
+              Commander
+              <img src="../img/icone-panier.svg" alt="Panier" class="icon" />
+            </button>
               </div>
       
               <div id="popup1" class="popup">
                   <div class="popup-content">
                       <span class="close-button">&times;</span>
-                      <h2>Bière brune</h2>
+                      <h2>Bière blonde</h2>
                       <h4>0% d'alcool</h4>
                       <h5>ingrédients :</h5>
-                    <p>Eau, malt torréfié d'orge, malt torréfié de blé, houblon</p>
-                      <p>Allergènes : Gluten</p>
+                    <p>Eau, malt d'orge, colorant : E150c, arôme naturel, houblon</p>
+                    <br>
+                      <p>Allergènes : gluten</p>
                   </div>
               </div>
       
               <div id="popup2" class="popup">
                   <div class="popup-content">
                       <span class="close-button">&times;</span>
-                      <h2>Bière brune</h2>
+                      <h2>Bière IPA</h2>
                       <h4>0% d'alcool</h4>
                       <h5>ingrédients :</h5>
 
-                    <p>Eau, malt torréfié d'orge, malt torréfié de blé, houblon</p>
-                      <p>Allergènes : Gluten</p>
+                    <p>Houblon agrume, eau, coriandre, malt de seigle</p>
+                    <br>
+                      <p>Sans gluten</p>
                   </div>
               </div>
       
@@ -170,7 +196,8 @@
                       <h5>ingrédients :</h5>
 
                     <p>Eau, malt torréfié d'orge, malt torréfié de blé, houblon</p>
-                      <p>Allergènes : Gluten</p>
+                    <br>
+                      <p>Allergènes : gluten</p>
                   </div>
               </div>
           </div>
@@ -178,7 +205,17 @@
         </div>
       </div>
     </div>
-      <br />
+
+
+  
+  
+        <div class="video-container">
+          <video id="myVideo" autoplay loop muted playsinline>
+              <source src="../img/v1-brouillon.mp4" type="video/mp4">
+          </video>
+      </div>
+
+
 
       <div class="container infos">
         <div class="row">
@@ -197,11 +234,7 @@
             <p>LICORNE Blonde :</p>
             <br />
             <p>
-              La Fraîcheur et la Légèreté au Rendez-vous Notre bière blonde
-              incarne la pureté et la légèreté avec son arôme délicat et sa
-              couleur dorée éclatante. Brassée avec des ingrédients biologiques
-              de première qualité, elle dévoile des notes florales et légèrement
-              fruitées.
+              Incarne la pureté et la légèreté avec son arôme délicat et sa couleur dorée éclatante. Brassée avec des ingrédients biologiques de première qualité, elle dévoile des notes florales et légèrement fruitées. Sans alcool et locale, LICORNE Blonde est le choix idéal pour une pause rafraîchissante à tout moment de la journée. Découvrez la douceur et la finesse de cette bière qui évoque les champs de houblon ensoleillés et la pureté de l'eau de nos montagnes.
             </p>
 
             
@@ -209,31 +242,12 @@
         </div>
       </div>
 
-      <br />
-      <div class="container">
-        <div class="row">
-      <div class="video-container">
-        <video id="myVideo" autoplay loop muted playsinline>
-            <source src="../img/v1-brouillon.mp4" type="video/mp4">
-        </video>
-    </div>
-      </div>
-      </div>
+
+  
 
 
       <div class="container infos">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="container">
-              <div class="container image">
-                <img
-                  src="../img/bière-blonde.png"
-                  alt="Image 2"
-                  class="rotated-image right"
-                />
-              </div>
-            </div>
-          </div>
           <div class="col-12 col-md-6 info">
             <p>LICORNE Sans Gluten :</p>
             <br />
@@ -248,6 +262,17 @@
               bière qui combine plaisir et bien-être, sans compromis.
             </p>
           </div>
+          <div class="col-12 col-md-6">
+            <div class="container">
+              <div class="container image">
+                <img
+                  src="../img/bière-IPA.png"
+                  alt="Image 2"
+                  class="rotated-image right"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -259,7 +284,7 @@
             <div class="container">
               <div class="container image">
                 <img
-                  src="../img/bière-blonde.png"
+                  src="../img/bière-brune.png"
                   alt="Image 3"
                   class="rotated-image left"
                 />

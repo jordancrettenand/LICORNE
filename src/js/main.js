@@ -1,3 +1,5 @@
+// -----------popup----------
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const popups = document.querySelectorAll(".popup");
   const beerImages = document.querySelectorAll(".beer-image");
@@ -25,4 +27,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-// ---------------------
+// -----------carousel----------
+let currentIndex = 0;
+const slides = document.querySelectorAll(".carousel-slide");
+const totalSlides = slides.length;
+const prevButton = document.querySelector(".carousel-prev");
+const nextButton = document.querySelector(".carousel-next");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
+  });
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(currentIndex);
+}
+
+nextButton.addEventListener("click", nextSlide);
+prevButton.addEventListener("click", prevSlide);
+
+setInterval(nextSlide, 5000);
